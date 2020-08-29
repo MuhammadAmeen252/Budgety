@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" href="BudgetyStyleSheet.css" type="text/css">
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+    </head>
+    <body>
+        
+        <div class="Back-Image">
+                <div class="textMonth">
+                        <h1>AVAILABLE BUDGET</h1>
+                </div>
+                <div class="TotalBudget">
+                    0
+                </div>
+            <div class="row ml-md-4">
+                <div class="Income col-md-3">
+                    INCOME
+                    <div class="IncomeAmount">
+                        0
+                    </div>
+                </div>
+                <div class="Expenses col-md-3">
+                    EXPENSES
+                    <div class="ExpenseAmount">
+                        0
+                    </div>
+                    <div class="badge badge-warning ml-md-4 " id="TExpPercent" style="font-size: 17px;">
+                        0%
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <div class="InputContainer">
+        
+            <select class="selectionBox" name="ExpenseOrIncome">
+                <option value="0" selected disabled>+ / -</option>
+                <option value="Income">Income +</option>
+                <option value="Expense">Expense -</option>
+            </select>
+        
+        <input type="text" placeholder="Add description here" name="description" class="Inpdecs">
+        <input type="number" placeholder="Value" name="value" class="Value">
+        <button type="submit" class="add_Btn"><img src="submit.png" class="submitBtn" ></button>
+        </div>
+
+        <div class="container">
+            <div class="row">
+            <div class="col" style="color: teal;">
+                <h4>INCOME</h4>
+                <ul class="list-group list-group-flush" id='income_list'>
+                <h6>
+                   <!--<li class="list-group-item d-flex p-2 justify-content-between align-items-center" id="Income-0">Salary
+                        <span class="badge badge-info">+14000</span>
+                        <div>
+                            <button class="btn btn-outline-danger btn-circle btn-sm" type="button">X</button>
+                        </div>
+                    </li>
+                     
+                    <li class="list-group-item d-flex justify-content-between align-items-center" id="Income-1">Salary
+                        <span class="badge badge-info">+14000</span>
+                        <div>
+                            <button class="btn btn-outline-danger btn-circle btn-sm" type="button">X</button>
+                        </div>
+                    </li>-->
+                </h6>
+                    
+                </ul>
+            </div>  
+            
+            <div class="col ml-md-4" style="color: red;">
+                <h4>EXPENSE</h4>
+                <ul class="list-group list-group-flush" id='expense_list'>
+                <h5>
+                    <!--<li class="list-group-item d-flex justify-content-between align-items-center" id="Expense-0">car rent
+                        <span class="badge badge-danger">-1000</span>
+                        <div>
+                            <span class="badge badge-warning" style="font-size: small;">10%</span>
+                            <button class="btn btn-outline-danger btn-circle btn-sm" type="button">X</button>
+                        </div>
+                    </li>
+                    <li class="list-group-item d-flex justify-content-between align-items-center" id="Expense-1">car rent
+                        <span class="badge badge-danger">-5000</span>
+                        <div>
+                        <span class="badge badge-warning" style="font-size: small;">10%</span>
+                        <button class="btn btn-outline-danger btn-circle btn-sm" type="button">X</button>
+                        </div>
+                    </li>-->
+                </h5>
+                    
+                </ul>
+            </div>
+            </div>
+        </div>
+
+        <script src="BudgetyScript.js"></script>
+    </body>
+</html>

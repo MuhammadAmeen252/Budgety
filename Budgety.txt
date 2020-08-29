@@ -1,0 +1,15 @@
+To Do List:
+
+1> UI module:
+Add new item to UI
+Update UI
+Get Input values
+2> data module:
+Add new item to data structure
+calculate Budget
+3> Controller module:
+Add eventHandler
+
+
+
+
